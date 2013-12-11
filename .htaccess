@@ -1,7 +1,7 @@
 AddDefaultCharset utf-8
-Options All -ExecCGI -Indexes -Includes +FollowSymLinks
+# Options All -ExecCGI -Indexes -Includes +FollowSymLinks
 ServerSignature Off
-php_flag expose_php Off
+# php_flag expose_php Off
 
 RewriteEngine on
 

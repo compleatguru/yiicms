@@ -9,7 +9,7 @@
 return array(
     'basePath'          => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'defaultController' => 'page/default/show',
-    'language'          => 'ru',
+    'language'          => 'en',
     'preload'           => array('log', 'bootstrap'),
     'import'            => array(
         'application.components.*',

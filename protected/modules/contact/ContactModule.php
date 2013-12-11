@@ -78,7 +78,7 @@ class ContactModule extends WebModule
             ),
             'fullFormClass'   => array(
                 'htmlOptions' => array(
-                    'hint' => Yii::t('ContactModule.contact', 'Не меняйте, если не уверены')
+                    'hint' => Yii::t('ContactModule.contact', 'Do not change unless you know')
                 )
             )
         );
@@ -89,7 +89,7 @@ class ContactModule extends WebModule
         /** read settings from DB */
         parent::init();
         if (empty($this->fullFormTitle)) {
-            $this->fullFormTitle = Yii::t('ContactModule.contact', 'Опросный лист с сайта') . ' ' . Yii::app()->name;
+            $this->fullFormTitle = Yii::t('ContactModule.contact', 'Questionnaire site') . ' ' . Yii::app()->name;
         }
         if (empty($this->fullFormMessage)) {
             $this->fullFormMessage = Yii::t('ContactModule.contact', 'Thanks for message!');

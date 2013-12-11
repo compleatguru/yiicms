@@ -4,7 +4,7 @@
  * @var $model Menu
  */
 $this->breadcrumbs = array(
-    Yii::t('menu', 'Меню')        => array('default/admin'),
+    Yii::t('menu', 'Menu')        => array('default/admin'),
     $model->title,
 );
 $this->widget(

@@ -9,7 +9,7 @@ class MenuModule extends WebModule
 
     public static function getName()
     {
-        return Yii::t('menu', 'Меню');
+        return Yii::t('menu', 'Menu');
     }
 
     public static function getDescription()
@@ -53,7 +53,7 @@ class MenuModule extends WebModule
         }/* else {@todo add settings for blog
             $menu[] = array(
                 'icon'  => 'wrench',
-                'label' => Yii::t('admin', 'Настройки'),
+                'label' => Yii::t('admin', 'Settings'),
                 'url'   => array('/admin/setting/update/' . $this->id . '/')
             );
         }*/

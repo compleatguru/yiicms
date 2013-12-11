@@ -139,8 +139,8 @@ class WebModule extends CModule
     public function getAdminMenu()
     {
         $menu = array(
-            array('icon' => 'list-alt', 'label' => Yii::t('admin', 'Список'), 'url' => array('/' . $this->id . '/' . Yii::app()->controller->id . '/admin')),
-            array('icon' => 'file', 'label' => Yii::t('admin', 'Добавить'), 'url' => array('/' . $this->id . '/' . Yii::app()->controller->id . '/create'))
+            array('icon' => 'list-alt', 'label' => Yii::t('admin', 'list'), 'url' => array('/' . $this->id . '/' . Yii::app()->controller->id . '/admin')),
+            array('icon' => 'file', 'label' => Yii::t('admin', 'Add'), 'url' => array('/' . $this->id . '/' . Yii::app()->controller->id . '/create'))
         );
         if (isset(Yii::app()->controller->actionParams['id']) && Yii::app()->controller->id == 'default') {
             $menu[] = array(
@@ -163,7 +163,7 @@ class WebModule extends CModule
         } else if (!empty($this->settingData)) {
             $menu[] = array(
                 'icon'  => 'wrench',
-                'label' => Yii::t('admin', 'Настройки'),
+                'label' => Yii::t('admin', 'Settings'),
                 'url'   => array('/admin/setting/update/' . $this->id . '/')
             );
         }

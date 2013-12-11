@@ -5,7 +5,7 @@
  */
 
 $this->breadcrumbs = array(
-    Yii::t('user', 'Пользователи') => array('admin'),
+    Yii::t('user', 'Members') => array('admin'),
     Yii::t('user', 'Управление'),
 );
 

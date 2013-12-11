@@ -5,7 +5,7 @@
  */
 $this->pageTitle   = Yii::t('user', 'Изменение пользователя');
 $this->breadcrumbs = array(
-    Yii::t('user', 'Пользователи') => array('admin'),
+    Yii::t('user', 'Members') => array('admin'),
     $model->username               => array('view', 'id' => $model->id),
     Yii::t('user', 'Изменение'),
 );

@@ -25,7 +25,7 @@ return array (
   'Caching (sec.)' => 'Кэширование (сек.)',
   'Name' => 'Название',
   'Site Name' => 'Название сайта',
-  'Settings' => 'Настройки',
+  'Settings' => 'Settings',
   'Description' => 'Описание',
   'Control Panel' => 'Панель управления',
   'Go to Settings' => 'Перейти в управление',

@@ -77,7 +77,7 @@ class BlogModule extends WebModule
         }/* else {@todo add settings for blog
             $menu[] = array(
                 'icon'  => 'wrench',
-                'label' => Yii::t('admin', 'Настройки'),
+                'label' => Yii::t('admin', 'Settings'),
                 'url'   => array('/admin/setting/update/' . $this->id . '/')
             );
         }*/

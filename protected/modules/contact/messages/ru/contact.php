@@ -42,6 +42,6 @@ return array (
   'Set from email address' => 'Указывать адрес отправителя',
   'Thanks for message!' => 'Спасибо за сообщение! Мы Вам обязательно ответим!',
   'You name?' => '',
-  'Не меняйте, если не уверены' => '',
-  'Опросный лист с сайта' => '',
+  'Do not change unless you know' => '',
+  'Questionnaire site' => '',
 );

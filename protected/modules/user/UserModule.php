@@ -28,12 +28,12 @@ class UserModule extends WebModule
 
     public static function getName()
     {
-        return Yii::t('user', 'Пользователи');
+        return Yii::t('user', 'Members');
     }
 
     public static function getDescription()
     {
-        return Yii::t('user', 'Управление пользователями сайта');
+        return Yii::t('user', 'User Management Site'); // Управление пользователями сайта
     }
 
     public static  function getIcon()
@@ -44,11 +44,11 @@ class UserModule extends WebModule
     public function getSettingLabels()
     {
         return array(
-            'minPasswordLength'        => Yii::t('admin', 'Минимальная длина пароль'),
-            'emailAccountVerification' => Yii::t('admin', 'Включить активацию Email'),
-            'showCaptcha'              => Yii::t('admin', 'Включить Captcha в форме регистрации'),
-            'minCaptchaLength'         => Yii::t('admin', 'Минимальное число символов в Captcha'),
-            'maxCaptchaLength'         => Yii::t('admin', 'Максимальное число символов в Captcha')
+            'minPasswordLength'        => Yii::t('admin', 'The minimum length of the password'), // Минимальная длина пароль
+            'emailAccountVerification' => Yii::t('admin', 'Include activation Email'), // Включить активацию Email
+            'showCaptcha'              => Yii::t('admin', 'Include Captcha in the registration form'), // Включить Captcha в форме регистрации
+            'minCaptchaLength'         => Yii::t('admin', 'Minimum number of characters in the Captcha'), // Минимальное число символов в Captcha
+            'maxCaptchaLength'         => Yii::t('admin', 'Maximum number of characters in the Captcha') // Максимальное число символов в Captcha
         );
     }
 

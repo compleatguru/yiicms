@@ -4,7 +4,7 @@
  * @var $this Controller
  */
 $this->breadcrumbs = array(
-    Yii::t('menu', 'Меню')        => array('default/admin'),
+    Yii::t('menu', 'Menu')        => array('default/admin'),
     Yii::t('menu', 'Управление'),
 );
 
@@ -58,7 +58,7 @@ echo CHtml::link(
                 'name'                 => 'status',
                 'filter'      => array(
                     0  => Yii::t('menu', 'Скрыто'),
-                    1  => Yii::t('menu', 'Опубликовано')
+                    1  => Yii::t('menu', 'Posted')
                 ),
                 'htmlOptions' => array('style' => 'width:40px; text-align:center;'),
             ),

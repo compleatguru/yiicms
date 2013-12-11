@@ -46,7 +46,7 @@ $form = $this->beginWidget(
 	<?php $this->widget('bootstrap.widgets.TbButton', array(
 	'buttonType'   => 'submit',
 	'type'         => 'primary',
-	'label'        => $model->isNewRecord ? Yii::t('menu', 'Добавить') : Yii::t('menu', 'Сохранить'),
+	'label'        => $model->isNewRecord ? Yii::t('menu', 'Add') : Yii::t('menu', 'Сохранить'),
 )); ?>
 </div>
 <?php $this->endWidget(); ?>

@@ -48,15 +48,15 @@ class SortableBehavior extends CActiveRecordBehavior
             'options' => array(
                 0 => array(
                     'disabled' => true,
-                    'label'    => Yii::t('AdminModule.behavior', ' - Разместить перед: - ')
+                    'label'    => Yii::t('AdminModule.behavior', '- Place before: -')
                 )
             )
         );
 
         if (!$this->owner->isNewRecord) {
-            $htmlOptions['options'][$this->owner->{$this->sortAttribute}] = array('label' => Yii::t('AdminModule.behavior', ' - Оставить как есть - '));
+            $htmlOptions['options'][$this->owner->{$this->sortAttribute}] = array('label' => Yii::t('AdminModule.behavior', '- Leave as is -'));
         } else {
-            $htmlOptions['empty'] = Yii::t('AdminModule.behavior', 'Разместить в конец');
+            $htmlOptions['empty'] = Yii::t('AdminModule.behavior', 'Place the end of the');
         }
         #print_r($htmlOptions);exit;
         return $htmlOptions;
@@ -66,11 +66,11 @@ class SortableBehavior extends CActiveRecordBehavior
     {
         $data = $this->getOptionsData();
         $maxSortOrder = max(array_keys($data)) + 1;
-        $data[$maxSortOrder] = Yii::t('AdminModule.behavior', 'Разместить в конец');
+        $data[$maxSortOrder] = Yii::t('AdminModule.behavior', 'Place the end of the');
         if ($this->owner->isNewRecord) {
             $htmlOptions['options'][$maxSortOrder] = array('selected' => true);
         } else {
-            $data[$this->owner->{$this->sortAttribute}] = Yii::t('AdminModule.behavior', ' - Оставить как есть - ');
+            $data[$this->owner->{$this->sortAttribute}] = Yii::t('AdminModule.behavior', '- Leave as is -');
         }
 
         $htmlOptions['options']['0'] = array('disabled' => true);
@@ -100,7 +100,7 @@ class SortableBehavior extends CActiveRecordBehavior
             $this->sortAttribute,
             $this->optionsTitleAttribute
         );
-        return array_merge(array(0 => Yii::t('AdminModule.behavior', ' - Разместить перед: - ')), $data);
+        return array_merge(array(0 => Yii::t('AdminModule.behavior', '- Place before: -')), $data);
     }
 
     /**

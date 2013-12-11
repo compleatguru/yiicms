@@ -20,7 +20,7 @@
  */
 return array (
 	'Access denied.' => 'Доступ запрещен.',
-	'Add' => 'Добавить',
+	'Add' => 'Add',
 	'Add child' => 'Добавить потомка',
 	'Add {type}' => 'Добавить {type}',
 	'Ancestors' => 'Предки',

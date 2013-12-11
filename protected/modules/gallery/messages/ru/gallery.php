@@ -18,7 +18,7 @@
  */
 return array (
   '<i class="icon-search"></i> Search <span class="caret"></span>' => '<i class="icon-search"></i> Поиск <span class="caret"></span>',
-  'Add' => 'Добавить',
+  'Add' => 'Add',
   'Add photo…' => 'Добавить фото…',
   'Adding' => 'Добавление',
   'Album' => 'Альбом',
@@ -45,7 +45,7 @@ return array (
   'Name' => 'Название',
   'Order' => 'Порядок',
   'Photos' => 'Фотографии',
-  'Published' => 'Опубликовано',
+  'Published' => 'Posted',
   'Published. Hide?' => 'Опубликовано. Скрыть?',
   'Remove selected' => 'Удалить выбранные',
   'Save' => 'Сохранить',
